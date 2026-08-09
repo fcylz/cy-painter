@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=./pages/index.html">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>有限图形通信系统 · cy-painter</title>
+<script>
+// 保留全部query参数，重定向到 pages/index.html
+const dest = new URL("./pages/index.html", window.location.href);
+
+new URLSearchParams(window.location.search).forEach((v,k)=>{
+  dest.searchParams.set(k, v);
+});
+window.location.replace(dest.href);
+</script>
 </head>
-<body>
-  <p>正在进入 <a href="./pages/index.html">有限图形通信系统 · cy-painter</a>...</p>
-</body>
+<body></body>
 </html>
