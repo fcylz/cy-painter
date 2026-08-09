@@ -1,0 +1,65 @@
+/* cy-painter design tokens — derived from the original finite graphic communication system */
+:root {
+  --cp-background: #f3f2f0;
+  --cp-foreground: #1c1c1e;
+  --cp-card: #ffffff;
+  --cp-card-foreground: #1c1c1e;
+  --cp-primary: #1c1c1e;
+  --cp-primary-foreground: #ffffff;
+  --cp-muted: #6c6c70;
+  --cp-muted-foreground: #a6a6aa;
+  --cp-border: rgba(0, 0, 0, 0.04);
+  --cp-input: #ececec;
+  --cp-ring: #1c1c1e;
+  --cp-radius-sm: 12px;
+  --cp-radius-md: 16px;
+  --cp-radius-lg: 16px;
+
+  /* surface & utility */
+  --cp-white: #ffffff;
+  --cp-black: #000000;
+  --cp-surface: #fafafa;
+  --cp-surface-pressed: #f0f0f0;
+  --cp-chip: #f4f4f4;
+  --cp-line-hard: #ececec;
+
+  /* emotion palette */
+  --cp-emotion-neutral: #111111;
+  --cp-emotion-calm: #4A90E2;
+  --cp-emotion-accept: #2E9B4D;
+  --cp-emotion-curious: #D4A017;
+  --cp-emotion-desire: #E67E22;
+  --cp-emotion-urgent: #D64545;
+  --cp-emotion-love: #9B59B6;
+  --cp-emotion-unsure: #7F8C8D;
+
+  /* Tailwind v4 semantic bridge */
+  @theme inline {
+    --color-background: var(--cp-background);
+    --color-foreground: var(--cp-foreground);
+    --color-card: var(--cp-card);
+    --color-card-foreground: var(--cp-card-foreground);
+    --color-primary: var(--cp-primary);
+    --color-primary-foreground: var(--cp-primary-foreground);
+    --color-muted: var(--cp-muted);
+    --color-muted-foreground: var(--cp-muted-foreground);
+    --color-border: var(--cp-border);
+    --color-input: var(--cp-input);
+    --color-ring: var(--cp-ring);
+    --radius-sm: var(--cp-radius-sm);
+    --radius-md: var(--cp-radius-md);
+    --radius-lg: var(--cp-radius-lg);
+  }
+
+  /* original palette aliases */
+  --bg: var(--cp-background);
+  --card: var(--cp-card);
+  --ink: var(--cp-foreground);
+  --ink-soft: var(--cp-muted);
+  --ink-faint: var(--cp-muted-foreground);
+  --line: var(--cp-input);
+  --shadow: 0 12px 34px rgba(0, 0, 0, 0.06), 0 3px 10px rgba(0, 0, 0, 0.035);
+  --font-ui: "Outfit", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --safe-b: env(safe-area-inset-bottom, 0px);
+}
